@@ -27,6 +27,6 @@ public class MainActivity extends AppCompatActivity{
         RecyclerView.ItemDecoration dividerItemDecoration = new DividerItemDecorator(
                 ContextCompat.getDrawable(this, R.drawable.decor));
         recyclerView.addItemDecoration(dividerItemDecoration);
-        recyclerView.setOnScrollListener(new CustomScrollListener(linearLayoutManager));
+        recyclerView.setOnScrollListener(new CustomScrollListener(linearLayoutManager, this));
     }
 }
